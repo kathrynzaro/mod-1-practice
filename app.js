@@ -1,8 +1,19 @@
-// import functions and grab DOM elements
+import { fetchHighscores } from './fetch-utils.js';
+import { renderHighscore } from './render-utils.js';
 
-// let state
+const insertToken = document.getElementById('token');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+insertToken.addEventListener('click', () => {
+    return window.location.href = '/auth';
+});
+
+async function onLoad() {
+    const highscoresEl = document.getElementById('highscores');
+    const highscores = await fetchHighscores();
+    for (let highscore of highscores) {
+        const highscoreElem = renderHighscore(highscore);
+        highscoresEl.append(highscoreElem);
+    }
+}
+
+onLoad();

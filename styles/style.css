@@ -1,12 +1,12 @@
 
-body {
+/* body { */
     /* feel free to update these css variables for a quick theme */
     
-    --color1: white;
+    /* --color1: white;
     --color2: white;
     --color3: white;
     --color4: white;
-    --color5: white;
+    --color5: white; */
     
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
         
@@ -22,24 +22,23 @@ body {
     --color4: hsla(45, 73%, 98%, 1);
     --color5: hsla(224, 40%, 79%, 1); */
     
-    --header-height: 80px;
+    /* --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
-    --footer-height: 25px;
+    --gutter: 30px; */
+    /* --footer-height: 25px; */
     
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
-}
+    
+/* } */
 
-main {
+/* main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
-}
+} */
 
-section {
+/* section {
     background-color: var(--color5);
     max-width: 80%;
     display: flex;
@@ -51,41 +50,40 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
-}
+} */
 
-header {
+/* header {
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
+    justify-content: center;
     height: var(--header-height);
     box-shadow: var(--shadow);
-}
+} */
 
 
-h2 {
+/* h2 {
     font-size: 1.8rem;
     font-weight: bold;
-}
+    color: white;
+} */
 
-.gutter-right {
+/* .gutter-right {
     margin-right: 20px;
-}
+} */
 
-header img {
+/* header img {
     height: var(--header-height);
-}
+} */
 
-p {
+/* p {
     margin: var(--gutter);
-}
+} */
   
-footer {
+/* footer {
     position: fixed;
     width: 100%;
     bottom: 0;
     height: var(--footer-height);
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
     box-shadow: var(--shadow);
-}
+} */

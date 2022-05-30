@@ -7,28 +7,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Bangers&family=Chicle&family=Comfortaa:wght@300&family=Great+Vibes&family=IM+Fell+French+Canon&family=IM+Fell+French+Canon+SC&family=Inconsolata:wght@200&family=Irish+Grover&family=Josefin+Sans&family=Karla&family=Limelight&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:wght@400;700&family=Nixie+One&family=Oswald&family=Philosopher:wght@400;700&family=Poiret+One&family=Press+Start+2P&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Slabo+27px&family=Space+Mono&family=Spectral&family=Tenor+Sans&family=Ultra&family=Unica+One&family=VT323&family=Varela+Round&family=Yeseva+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="./auth.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <h1>VSSSNAKE</h1>
-        <button>created <br> by...</button>
+        <h1>
+            VSSSNAKE
+        </h1>
     </header>
-    <section id="main-section">
-        <h2>high scores</h2>
-        <div id="highscores">
-        </div>
-        <button id="token" class="token">insert token</button>
-    </section>
+    <main>
+        <form id="sign-up">
+            <h3>SIGN UP</h3>
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password">
+            <button class="token">Insert Token</button>
+        </form>
+        <form id="sign-in">
+            <h3>SIGN IN</h3>
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="sign-in-email">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="sign-in-password">
+            <button class="token">Insert Token</button>
+        </form>
     </main>
-    <!-- <footer>
-        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
-    </footer> -->
+    <footer>
+        <!-- <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div> -->
+    </footer>
 
-    <script type="module" src="./app.js"></script>
+    <script type="module" src="./auth.js"></script>
 </body>
 
 </html>

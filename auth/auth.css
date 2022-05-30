@@ -1,0 +1,82 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    color: white;
+}
+header {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 100px;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+    letter-spacing: 4px;
+    color: rgb(195, 255, 0);
+    text-shadow: 4px 4px 1px rgb(0, 0, 0), 6px 6px 1px rgb(3, 134, 40), 7px 7px 1px rgb(60, 245, 32), 8px 8px 3px black, 5px 5px 15px rgb(217, 255, 0), 1px 1px 15px rgb(2, 165, 2); 
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+h3 {
+    padding: 5px;
+    color: yellow;
+}
+
+label {
+    padding: 5px;
+    letter-spacing: 3px;
+}
+
+label, input {
+    width: 250px;
+    color: chartreuse;
+}
+
+input {
+    margin: 5px;
+    padding: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: .7rem;
+    background-color: black;
+    border: 3px solid chartreuse;
+    color: chartreuse;
+}
+
+.token {
+    font-family: 'Press Start 2P', cursive;
+    background-image: linear-gradient(150deg, rgb(252, 105, 0), rgb(255, 221, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    border: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: transform 1.5s ease-in-out;
+    margin-top: 25px;
+    width: 200px;
+}
+
+.token:hover {
+    cursor: url(/assets/coin.png), pointer;
+    opacity: .5;
+    transform: rotateY(360deg);
+}

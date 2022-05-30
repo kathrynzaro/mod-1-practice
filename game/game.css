@@ -2,10 +2,11 @@ body {
     font-family: 'Press Start 2P', cursive;
     background-color: black;
     color: white;
+    text-transform: uppercase;
 }
 
 header {
-    height: 200px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -37,73 +38,53 @@ h1 {
     /* background-image: linear-gradient(150deg, rgb(6, 117, 2), rgb(187, 255, 0));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text; */
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 0;
     letter-spacing: 4px;
     color: rgb(195, 255, 0);
     text-shadow: 4px 4px 1px rgb(0, 0, 0), 6px 6px 1px rgb(3, 134, 40), 7px 7px 1px rgb(60, 245, 32), 8px 8px 3px black, 5px 5px 15px rgb(217, 255, 0), 1px 1px 15px rgb(2, 165, 2); 
 }
 
-h1:hover {
-    color: black;
+main {
+    display: flex;
+    justify-content: center;
 }
 
-#main-section {
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-h2 {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    text-align: center;
-    width: 450px;
-    text-shadow: 1px 1px 4px white;
-}
-
-#highscores {
+    width: 300px;
     color: white;
-    text-transform: uppercase;
-    padding: 5px;
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    background-image: linear-gradient(360deg, rgb(6, 117, 2), rgb(187, 255, 0));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    margin: 10px;
+    text-align: center;
 }
 
-.highscore {
-    /* padding: 10px; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    
+input, label {
+    margin: 20px;
 }
 
-.highscore h4, p {
-    margin: 8px;
-}
-
-.token {
+input {
     font-family: 'Press Start 2P', cursive;
-    background-image: linear-gradient(150deg, rgb(252, 105, 0), rgb(255, 221, 0));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    padding: 5px;
+    background-color: black;
+    border: 2px solid chartreuse;
+    color: chartreuse;
+}
+
+form button {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    background-color: black;
     border: none;
-    font-size: 2.5rem;
+    text-shadow: 1px 1px 4px white;
     text-transform: uppercase;
-    width: 500px;
-    margin-top: 100px;
-    transition: transform 1.5s ease-in-out;
+    font-size: 1.2rem;
+    width: 150px;
+    margin-top: 50px;
 }
 
-.token:hover {
-    cursor: url(/assets/coin.png), pointer;
+button:hover {
     opacity: .5;
-    transform: rotateY(360deg);
+    cursor: pointer;
 }
-
